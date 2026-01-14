@@ -1,0 +1,33 @@
+Update again the todo.sh script to make the following changes in it.
+
+
+Add a line of code to sort the elements from the script in alphabetical order.
+
+
+Test the script using these inputs:
+
+
+Meditate
+Hydrate
+Work
+Study
+Exercise
+Sleep
+
+Remember to type stop when you are done adding items to the array.
+
+
+Execute the script to ensure your changes work fine.
+
+
+#!/bin/bash
+declare -a todo_list
+while read -p "Add items to your to do list (or type 'stop' to stop adding): " todo; do
+  if [[ "${todo}" == "stop" ]]; then
+    break
+  fi
+  todo_list+=("${todo}")
+done
+echo "Current todo list: ${todo_list[@]}"
+sorted_array=$(printf "%s\n" "${todo_list[@]}" | sort)
+printf "%s\n" "Sorted todo list:" ${sorted_array[@]}
