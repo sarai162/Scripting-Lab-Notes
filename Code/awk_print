@@ -30,3 +30,6 @@ Hello
 Hello
 Hello
 Hello
+---
+[bob@student-node ~]$ awk 'END { print "Hello" }' lines.txt
+Hello
