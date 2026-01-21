@@ -9,3 +9,12 @@ Hello
 Hello
 $
 ```
+
+# The -n flag helps resolve this by only printing the processed output to the terminal
+
+```console
+$bash
+[bob@student-node ~]$ sed -n 'p' <<< "Hello"
+Hello
+$
+```
