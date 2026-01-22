@@ -18,3 +18,17 @@ $bash
 Hello
 $
 ```
+# Printing even lines in sed 
+
+```console
+$bash
+[bob@student-node ~]$ sed -n 'n;p' lines.txt
+2
+4
+6
+8
+10
+12
+14
+$
+```
