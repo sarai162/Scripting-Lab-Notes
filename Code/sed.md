@@ -3,7 +3,7 @@
 ## Example terminal session
 
 ```console
-$ bash 
+$bash 
 [bob@student-node ~]$ sed 'p' <<< "Hello"
 Hello
 Hello
