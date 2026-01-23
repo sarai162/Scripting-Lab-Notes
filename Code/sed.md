@@ -32,3 +32,19 @@ $bash
 14
 $
 ```
+
+# Printing odd lines in sed
+
+```console
+$bash
+[bob@student-node ~]$ sed -n 'p;n' lines.txt
+1
+3
+5
+7
+9
+11
+13
+15
+$
+```
