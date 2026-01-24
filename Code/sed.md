@@ -48,3 +48,12 @@ $bash
 15
 $
 ```
+
+# Print entire file 
+
+```console
+$bash
+[bob@student-node ~]$ sed '' sample.txt
+$
+```
+
