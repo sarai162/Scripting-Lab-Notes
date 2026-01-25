@@ -57,3 +57,9 @@ $bash
 $
 ```
 
+# Print specific line (3rd line)
+
+```console
+$bash
+[bob@student-node ~]$ sed -n '3p' sample.txt
+$
