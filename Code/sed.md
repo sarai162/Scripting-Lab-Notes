@@ -63,3 +63,11 @@ $
 $bash
 [bob@student-node ~]$ sed -n '3p' sample.txt
 $
+```
+
+# Print range of lines (1 to 5)
+```console
+$bash
+[bob@student-node ~]$ sed -n '1,5p' sample.txt
+$
+```
