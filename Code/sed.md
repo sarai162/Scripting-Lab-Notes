@@ -71,3 +71,19 @@ $bash
 [bob@student-node ~]$ sed -n '1,5p' sample.txt
 $
 ```
+
+# Search and print matching lines
+
+```console
+$bash
+[bob@student-node ~]$ sed -n '/error/p' sample.txt
+$
+```
+
+# Delete a specific line
+
+```console
+$bash
+[bob@student-node ~]$ sed '3d' sample.txt
+$
+```
