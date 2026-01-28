@@ -87,3 +87,11 @@ $bash
 [bob@student-node ~]$ sed '3d' sample.txt
 $
 ```
+
+# Delete a range of lines
+
+```console
+$bash
+[bob@student-node ~]$ sed '1,5d' sample.txt
+$
+```
