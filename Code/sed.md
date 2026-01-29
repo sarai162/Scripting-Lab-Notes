@@ -95,3 +95,11 @@ $bash
 [bob@student-node ~]$ sed '1,5d' sample.txt
 $
 ```
+
+# Delete lines matching a pattern
+
+```console
+$bash
+[bob@student-node ~]$ sed '/error/d' sample.txt
+$
+```
