@@ -103,3 +103,28 @@ $bash
 [bob@student-node ~]$ sed '/error/d' sample.txt
 $
 ```
+
+# Replace first occurrence in each line
+
+```console
+$bash
+[bob@student-node ~]$ sed 's/old/new/' sample.txt
+$
+
+```
+
+# Replace all occurrences in each line
+
+```console
+$bash
+[bob@student-node ~]$ sed 's/old/new/g' sample.txt
+$
+```
+
+# Replace text and edit file in place
+
+```console
+$bash
+[bob@student-node ~]$ sed -i 's/old/new/g' sample.txt
+$
+```
