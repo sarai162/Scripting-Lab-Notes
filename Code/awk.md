@@ -1,3 +1,6 @@
+# Printing multiple lines using awk command
+```console
+$bash
 [bob@student-node ~]$ cat lines.txt
 1
 2
@@ -30,6 +33,22 @@ Hello
 Hello
 Hello
 Hello
----
+$
+```
+
+# Printing single line 
+```console
+$bash
 [bob@student-node ~]$ awk 'END { print "Hello" }' lines.txt
 Hello
+$
+```
+
+# Print entire file
+```console
+$bash
+[bob@student-node ~]$ awk '{print}' sample.txt
+$
+```
+
+
