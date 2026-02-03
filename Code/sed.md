@@ -128,3 +128,26 @@ $bash
 [bob@student-node ~]$ sed -i 's/old/new/g' sample.txt
 $
 ```
+
+# More examples 
+
+```console
+$bash
+
+# Insert line before a matching pattern
+[bob@student-node ~]$ sed '/error/i This line is inserted' sample.txt
+
+# Append line after a matching pattern
+[bob@student-node ~]$ sed '/error/a This line is appended' sample.txt
+
+# Change (replace) entire matching line
+[bob@student-node ~]$ sed '/error/c This line is replaced' sample.txt
+
+# Case-insensitive search and print
+[bob@student-node ~]$ sed -n '/error/Ip' sample.txt
+
+# Use alternate delimiter (avoid slash conflict)
+[bob@student-node ~]$ sed 's|/usr/bin|/bin|g' sample.txt
+
+$
+```
