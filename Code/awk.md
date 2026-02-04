@@ -51,4 +51,17 @@ $bash
 $
 ```
 
+# Print specific column (1st column)
+```console
+$bash
+[bob@student-node ~]$ awk '{print $1}' sample.txt
+$
+```
+
+# Print multiple columns
+```console
+$bash
+[bob@student-node ~]$ awk '{print $1, $3}' sample.txt
+$
+```
 
