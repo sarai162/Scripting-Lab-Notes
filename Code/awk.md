@@ -65,3 +65,16 @@ $bash
 $
 ```
 
+# Print specific row (2nd line)
+```console
+$bash
+[bob@student-node ~]$ awk 'NR==2 {print}' sample.txt
+$
+```
+
+# Print 3rd column of 2nd row
+```console
+$bash
+[bob@student-node ~]$ awk 'NR==2 {print $3}' sample.txt
+$
+```
