@@ -78,3 +78,16 @@ $bash
 [bob@student-node ~]$ awk 'NR==2 {print $3}' sample.txt
 $
 ```
+
+# Print line number with content
+```console
+$bash
+[bob@student-node ~]$ awk '{print NR, $0}' sample.txt
+$
+```
+
+# Print lines matching a pattern
+```console
+$bash
+[bob@student-node ~]$ awk '/error/ {print}' sample.txt
+$
