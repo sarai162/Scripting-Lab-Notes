@@ -65,3 +65,29 @@ $bash
 $
 ```
 
+# Print specific row (2nd line)
+```console
+$bash
+[bob@student-node ~]$ awk 'NR==2 {print}' sample.txt
+$
+```
+
+# Print 3rd column of 2nd row
+```console
+$bash
+[bob@student-node ~]$ awk 'NR==2 {print $3}' sample.txt
+$
+```
+
+# Print line number with content
+```console
+$bash
+[bob@student-node ~]$ awk '{print NR, $0}' sample.txt
+$
+```
+
+# Print lines matching a pattern
+```console
+$bash
+[bob@student-node ~]$ awk '/error/ {print}' sample.txt
+$
