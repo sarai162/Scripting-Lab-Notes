@@ -91,3 +91,26 @@ $
 $bash
 [bob@student-node ~]$ awk '/error/ {print}' sample.txt
 $
+```
+
+# Filter using condition (numeric)
+```console
+$bash
+[bob@student-node ~]$ awk '$3 > 100 {print $1}' sample.txt
+$
+```
+
+# Use custom field separator (colon)
+```console
+$bash
+[bob@student-node ~]$ awk -F: '{print $1}' /etc/passwd
+$
+```
+
+# Use custom field separator (comma)
+```console
+$bash
+[bob@student-node ~]$ awk -F, '{print $2}' file.csv
+$
+```
+$
