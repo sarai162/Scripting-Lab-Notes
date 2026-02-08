@@ -113,4 +113,3 @@ $bash
 [bob@student-node ~]$ awk -F, '{print $2}' file.csv
 $
 ```
-$
