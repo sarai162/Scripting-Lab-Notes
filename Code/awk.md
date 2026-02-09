@@ -113,3 +113,17 @@ $bash
 [bob@student-node ~]$ awk -F, '{print $2}' file.csv
 $
 ```
+
+# Print last column
+```console
+$bash
+[bob@student-node ~]$ awk '{print $NF}' sample.txt
+$
+```
+
+# Print number of columns per row
+```console
+$bash
+[bob@student-node ~]$ awk '{print NF}' sample.txt
+$
+```
