@@ -127,3 +127,17 @@ $bash
 [bob@student-node ~]$ awk '{print NF}' sample.txt
 $
 ```
+
+# Count total lines
+```console
+$bash
+[bob@student-node ~]$ awk 'END {print NR}' sample.txt
+$
+```
+
+# Sum values of a column
+```console
+$bash
+[bob@student-node ~]$ awk '{sum += $3} END {print sum}' sample.txt
+$
+```
