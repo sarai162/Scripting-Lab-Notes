@@ -135,6 +135,20 @@ $bash
 $
 ```
 
+# Pass shell variable to awk
+```console
+$bash
+[bob@student-node ~]$ awk -v limit=100 '$3 > limit {print $1}' sample.txt
+$
+```
+
+# Print lines between two patterns
+```console
+$bash
+[bob@student-node ~]$ awk '/start/,/end/ {print}' sample.txt
+$
+```
+
 # Sum values of a column
 ```console
 $bash
