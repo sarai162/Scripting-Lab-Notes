@@ -127,3 +127,45 @@ $bash
 [bob@student-node ~]$ awk '{print NF}' sample.txt
 $
 ```
+
+# Count total lines
+```console
+$bash
+[bob@student-node ~]$ awk 'END {print NR}' sample.txt
+$
+```
+
+# Pass shell variable to awk
+```console
+$bash
+[bob@student-node ~]$ awk -v limit=100 '$3 > limit {print $1}' sample.txt
+$
+```
+
+# Print lines between two patterns
+```console
+$bash
+[bob@student-node ~]$ awk '/start/,/end/ {print}' sample.txt
+$
+```
+
+# Sum values of a column
+```console
+$bash
+[bob@student-node ~]$ awk '{sum += $3} END {print sum}' sample.txt
+$
+```
+
+# Print formatted output
+```console
+$bash
+[bob@student-node ~]$ awk '{printf "User: %s Age: %d\n", $1, $2}' users.txt
+$
+```
+
+# Use awk script from file
+```console
+$bash
+[bob@student-node ~]$ awk -f script.awk sample.txt
+$
+```
