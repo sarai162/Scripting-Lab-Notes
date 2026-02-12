@@ -155,3 +155,17 @@ $bash
 [bob@student-node ~]$ awk '{sum += $3} END {print sum}' sample.txt
 $
 ```
+
+# Print formatted output
+```console
+$bash
+[bob@student-node ~]$ awk '{printf "User: %s Age: %d\n", $1, $2}' users.txt
+$
+```
+
+# Use awk script from file
+```console
+$bash
+[bob@student-node ~]$ awk -f script.awk sample.txt
+$
+```
