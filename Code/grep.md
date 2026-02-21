@@ -1,5 +1,5 @@
-Definition: grep searches files or input for lines matching a pattern.
-Use it for: filtering logs, pattern matching, and quick text search.
+# Definition: grep searches files or input for lines matching a pattern.
+# Use it for: filtering logs, pattern matching, and quick text search.
 
 # Examples
 
