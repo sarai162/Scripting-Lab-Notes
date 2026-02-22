@@ -15,3 +15,15 @@ grep -i "error" file.txt
 ```
 grep -R "TODO" .
 ```
+# Show line numbers
+```
+grep -n "main" app.c
+```
+# Only filenames with matches
+```
+grep -l "config" -R .
+```
+# Only the matched part
+```
+grep -o "cat" animals.txt
+```
