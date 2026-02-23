@@ -27,3 +27,15 @@ grep -l "config" -R .
 ```
 grep -o "cat" animals.txt
 ```
+# Invert match
+```
+grep -v "INFO" logs.txt
+```
+# Count matches
+```
+grep -c "error" file.txt
+```
+# Extended regex
+```
+grep -E "cat|dog" pets.txt
+```
