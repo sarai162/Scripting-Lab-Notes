@@ -15,3 +15,15 @@ find . -type f -name "*.log"
 ```
 find . -size +10M
 ```
+# Find and delete
+```
+find . -name "*.tmp" -delete
+```
+# Run command on results
+```
+find . -name "*.log" -exec wc -l {} \;
+```
+# Find modified in last 1 day
+```
+find . -mtime -1
+```
