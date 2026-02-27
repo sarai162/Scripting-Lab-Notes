@@ -9,3 +9,11 @@ echo "file1 file2" | xargs rm
 ```
 find . -name "*.tmp" | xargs rm
 ```
+# Limit per command
+```
+cat list.txt | xargs -n 1 echo
+```
+# Null-safe (for filenames with spaces)
+```
+find . -print0 | xargs -0 rm
+```
