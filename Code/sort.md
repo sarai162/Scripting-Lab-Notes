@@ -9,3 +9,15 @@ sort names.txt
 ```
 sort -r names.txt
 ```
+# Numeric sort
+```
+sort -n scores.txt
+```
+# Sort by 2nd column
+```
+sort -k2 file.txt
+```
+# Unique + sort
+```
+sort -u file.txt
+```
