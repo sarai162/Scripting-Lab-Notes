@@ -5,3 +5,11 @@
 ```
 uniq sorted.txt
 ```
+# Count occurrences
+```
+uniq -c sorted.txt
+```
+# Show only duplicates
+```
+uniq -d sorted.txt
+```
