@@ -9,3 +9,15 @@ tar -cvf archive.tar folder/
 ```
 tar -xvf archive.tar
 ```
+# Create gzip-compressed archive
+```
+tar -czvf archive.tar.gz folder/
+```
+# Extract gzip archive
+```
+tar -xzvf archive.tar.gz
+```
+# List contents
+```
+tar -tf archive.tar.gz
+```
