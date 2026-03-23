@@ -9,3 +9,15 @@ jq '.' data.json
 ```
 jq '.name' user.json
 ```
+# Filter objects
+```
+jq 'select(.status=="active")' users.json
+```
+# Map fields
+```
+jq '.[] | {id, name}' users.json
+```
+# Update field
+```
+jq '.version = "2.0"' config.json
+```
