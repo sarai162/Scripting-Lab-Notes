@@ -5,3 +5,11 @@
 ```
 scp file.txt user@server:/tmp/
 ```
+# Copy directory recursively
+```
+scp -r project/ user@server:/var/www/
+```
+# Copy file from server
+```
+scp user@server:/etc/config .
+```
