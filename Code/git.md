@@ -9,3 +9,16 @@ git clone https://github.com/user/repo.git
 ```
 git status
 ```
+# Stage changes
+```
+git add file.txt
+git add .
+```
+# Commit
+```
+git commit -m "message"
+```
+# Push to branch
+```
+git push origin main
+```
