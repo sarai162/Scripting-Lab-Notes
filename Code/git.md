@@ -22,3 +22,15 @@ git commit -m "message"
 ```
 git push origin main
 ```
+# Pull updates
+```
+git pull
+```
+# Create branch
+```
+git checkout -b feature-1
+```
+# Switch branches
+```
+git checkout main
+```
