@@ -34,3 +34,12 @@ git checkout -b feature-1
 ```
 git checkout main
 ```
+# View history
+```
+git log --oneline
+```
+# Stash changes
+```
+git stash
+git stash apply
+```
